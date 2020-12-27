@@ -1,5 +1,5 @@
 # NEWick
-This is a little library for generating random Newick Tree files (`.nwk`), as well as providing a little data structure to store phylogenetic trees as an N-Tree.
+This is a little app for generating random Newick Tree files (`.nwk`), as well as providing a little data structure to store phylogenetic trees as an N-Tree.
 ## Build and run
 Compiling the application is very simple on UNIX-based machines with the provided Makefile:
 
