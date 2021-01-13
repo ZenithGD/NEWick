@@ -8,3 +8,5 @@ Compiling the application is very simple on UNIX-based machines with the provide
 It will generate two extra folders, `bin` (where the executable is located) and `build` (where the object files are located). If you want to delete them you can use the makefile too:
 
 ```make clean```
+
+Known issues: Dynamic memory isn't freed after the end of the object's lifespan. Also, it sometimes fails to generate correct Newick Trees for very high node count values (around 300000).
