@@ -14,10 +14,12 @@ nwk_node rand_node(const int id, const double l_b, const double h_b, const doubl
 	nwk_node n;
 	double uniform_01 = rand_double(0.0, 1.0);
 	if ( uniform_01 < sp_perc ) {
-		n.nom = special + std::to_string(id);
+		n.nom = "Spain-" + to_string(id);
 	}
 	else {
-		n.nom = "id" + std::to_string(id);
+		n.nom = "id_" + to_string(id) + "-" ;
+		n.nom.push_back('A' + id % 26);
+		n.nom += "/" + to_string(rand_int(0, id));
 	}
 	n.dist = rand_double(l_b, h_b);
 	return n;
